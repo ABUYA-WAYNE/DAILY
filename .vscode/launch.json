@@ -1,0 +1,49 @@
+{
+    // Use IntelliSense to learn about possible attributes.
+    // Hover to view descriptions of existing attributes.
+    // For more information, visit: https://go.microsoft.com/fwlink/?linkid=830387
+    "version": "0.2.0",
+    "configurations": [
+        {
+            "type": "java",
+            "name": "BankTransaction",
+            "request": "launch",
+            "mainClass": "Day69_TransactionManagement.BankTransaction",
+            "projectName": "dailyjava_4f1cee78"
+        },
+        {
+            "type": "java",
+            "name": "StudentApp",
+            "request": "launch",
+            "mainClass": "app.StudentApp",
+            "projectName": "dailyjava_4f1cee78"
+        },
+        {
+            "type": "java",
+            "name": "Main",
+            "request": "launch",
+            "mainClass": "Main",
+            "projectName": "dailyjava_4f1cee78"
+        },
+        {
+            "type": "java",
+            "name": "Current File",
+            "request": "launch",
+            "mainClass": "${file}"
+        },
+        {
+            "type": "java",
+            "name": "MarketSimulation",
+            "request": "launch",
+            "mainClass": "MarketSimulation",
+            "projectName": "100daily java tasks_a2fec6e5"
+        },
+        {
+            "type": "java",
+            "name": "MarketSimulation(1)",
+            "request": "launch",
+            "mainClass": "MarketSimulation",
+            "projectName": "Threading_842366ce"
+        }
+    ]
+}

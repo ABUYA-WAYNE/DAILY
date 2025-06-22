@@ -1,0 +1,41 @@
+Java Exception Handling Cheat Sheet
+1. Types of Exceptions
+----------------------
+- Checked Exceptions: Must be declared or handled (e.g., IOException, SQLException)
+- Unchecked Exceptions: Runtime exceptions (e.g., NullPointerException, ArithmeticException)
+2. Common Exceptions
+--------------------
+- ArithmeticException: Division by zero
+- ArrayIndexOutOfBoundsException: Accessing invalid index in an array
+- NullPointerException: Accessing members of a null object
+- NumberFormatException: Parsing a string to a number fails
+- InputMismatchException: Scanner input does not match expected type
+3. try-catch-finally Syntax
+---------------------------
+try {
+ // risky code
+} catch (ExceptionType name) {
+ // handling code
+} finally {
+ // cleanup code (optional)
+}
+4. Custom Exceptions
+--------------------
+class MyException extends Exception {
+ public MyException(String message) {
+ super(message);
+ }
+}
+5. Best Practices
+-----------------
+- Catch specific exceptions first
+- Avoid empty catch blocks
+- Use finally for cleanup (e.g., close files)
+- Log exceptions for debugging
+6. JVM Exception Hierarchy
+--------------------------
+Throwable
+ Error (don't catch)
+ Exception
+ CheckedException (e.g., IOException)
+ RuntimeException (e.g., NullPointerException)

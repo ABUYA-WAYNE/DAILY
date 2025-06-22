@@ -1,0 +1,37 @@
+Not all thread functions throw errors—only some do, and specifically, only a few throw checked exceptions (which Java forces you to handle with try-catch or throws). Let’s break it down:
+
+Thread Functions and Exceptions
+1. Throws Checked Exception
+Thread.sleep(long millis)
+
+Throws: InterruptedException
+Why: The thread might be interrupted while sleeping.
+Thread.join()
+
+Throws: InterruptedException
+Why: The thread waiting might be interrupted.
+2. Does NOT Throw Checked Exception
+start()
+
+Does not throw a checked exception.
+But: Throws IllegalThreadStateException (an unchecked exception) if you try to start a thread twice.
+run()
+
+Does not throw any exception by itself.
+interrupt()
+
+Does not throw any exception.
+setPriority(int) / getPriority()
+
+Do not throw checked exceptions.
+Summary Table
+Function	Throws Checked Exception?	       Exception Type
+sleep()   	Yes	                          InterruptedException
+join()	    Yes	                          InterruptedException
+start()	  No (but unchecked)              	IllegalThreadStateException
+run()	No	—
+interrupt()	No	—
+setPriority()	No	—
+In your code:
+Only Thread.sleep(60000); needs a try-catch for InterruptedException.
+Most other thread functions do not require you to handle checked exceptions.
