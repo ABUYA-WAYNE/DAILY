@@ -6,6 +6,13 @@
     "configurations": [
         {
             "type": "java",
+            "name": "JavaFXIntro",
+            "request": "launch",
+            "mainClass": "Day71_JavaFXIntro.src.JavaFXIntro",
+            "projectName": "dailyjava_4f1cee78"
+        },
+        {
+            "type": "java",
             "name": "BankTransaction",
             "request": "launch",
             "mainClass": "Day69_TransactionManagement.BankTransaction",
