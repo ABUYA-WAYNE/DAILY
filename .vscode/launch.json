@@ -6,6 +6,13 @@
     "configurations": [
         {
             "type": "java",
+            "name": "TestFX",
+            "request": "launch",
+            "mainClass": "TestFX",
+            "projectName": "dailyjava_4f1cee78"
+        },
+        {
+            "type": "java",
             "name": "JavaFXIntro",
             "request": "launch",
             "mainClass": "Day71_JavaFXIntro.src.JavaFXIntro",
