@@ -10,5 +10,7 @@ public class TestFX extends Application {
 
     public static void main(String[] args) {
         launch(args);
+        System.out.println("Streak confirmed at " + java.time.LocalDate.now());
+
     }
 }
