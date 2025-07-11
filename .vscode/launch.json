@@ -6,6 +6,13 @@
     "configurations": [
         {
             "type": "java",
+            "name": "ButtonClickExample",
+            "request": "launch",
+            "mainClass": "Day73_JavaFXEvents.ButtonClickExample",
+            "projectName": "dailyjava_4f1cee78"
+        },
+        {
+            "type": "java",
             "name": "TestFX",
             "request": "launch",
             "mainClass": "TestFX",
